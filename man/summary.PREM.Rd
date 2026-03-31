@@ -2,17 +2,22 @@
 % Please edit documentation in R/summary_PREM.R
 \name{summary.PREM}
 \alias{summary.PREM}
+\alias{print.summary.PREM}
 \title{Summarize the results of a piecewise random effects model (PREM)}
 \usage{
 \method{summary}{PREM}(object, ...)
+
+\method{print}{summary.PREM}(x, ...)
 }
 \arguments{
 \item{object}{An object of class "PREM" (returned by \code{Bayes_PREM(...)}).}
 
 \item{...}{Additional arguments.}
+
+\item{x}{An object of class "summary.PREM".}
 }
 \value{
-Prints estimates for key parameters in the PREM. Also returns a list of these values.
+Returns a list of key parameter estimates.
 }
 \description{
 Provides a summary of a PREM model, as returned by \code{Bayes_PREM()}.

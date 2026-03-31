@@ -2,17 +2,22 @@
 % Please edit documentation in R/summary_BPREM.R
 \name{summary.BPREM}
 \alias{summary.BPREM}
+\alias{print.summary.BPREM}
 \title{Summarize the results of a bivariate piecewise random effects model (BPREM)}
 \usage{
 \method{summary}{BPREM}(object, ...)
+
+\method{print}{summary.BPREM}(x, ...)
 }
 \arguments{
 \item{object}{An object of class "BPREM" (returned by \code{Bayes_BPREM(...)}).}
 
 \item{...}{Additional arguments.}
+
+\item{x}{An object of class "summary.BPREM".}
 }
 \value{
-Prints estimates for key parameters in the BPREM. Also returns a list of these values.
+Returns a list of key parameter estimates.
 }
 \description{
 Provides a summary of a BPREM model, as returned by \code{Bayes_BPREM()}.
